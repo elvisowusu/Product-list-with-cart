@@ -1,11 +1,5 @@
-
 function App() {
-
-  return (
-    <div className="text-blue-50">
-      Hello
-    </div>
-  )
+  return <div className="">Hello World</div>;
 }
 
-export default App
+export default App;
