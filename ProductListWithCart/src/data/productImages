@@ -35,50 +35,61 @@ import pannaCottaTablet from "../assets/image-panna-cotta-tablet.jpg";
 import pannaCottaMobile from "../assets/image-panna-cotta-mobile.jpg";
 import pannaCottaThumbnail from "../assets/image-panna-cotta-thumbnail.jpg";
 
-export const desktopImg = [
-  waffleDesktop,
-  cremeDesktop,
-  macaronDesktop,
-  tiramisuDesktop,
-  baklavaDesktop,
-  meringueDesktop,
-  cakeDesktop,
-  brownieDesktop,
-  pannaCottaDesktop,
-];
-
-export const tabletImg = [
-  waffleTablet,
-  cremeTablet,
-  macaronTablet,
-  tiramisuTablet,
-  baklavaTablet,
-  meringueTablet,
-  cakeTablet,
-  brownieTablet,
-  pannaCottaTablet,
-];
-
-export const mobileImg = [
-  waffleMobile,
-  cremeMobile,
-  macaronMobile,
-  tiramisuMobile,
-  baklavaMobile,
-  meringueMobile,
-  cakeMobile,
-  brownieMobile,
-  pannaCottaMobile,
-];
-
-export const thumbnailImg = [
-  waffleThumbnail,
-  cremeThumbnail,
-  macaronThumbnail,
-  tiramisuThumbnail,
-  baklavaThumbnail,
-  meringueThumbnail,
-  cakeThumbnail,
-  brownieThumbnail,
-  pannaCottaThumbnail,
-];
+export const productImages = 
+  {
+    waffle: {
+      desktop: waffleDesktop,
+      tablet: waffleTablet,
+      mobile: waffleMobile,
+      thumbnail: waffleThumbnail,
+    },
+    cremeBrulee: {
+      desktop: cremeDesktop,
+      tablet: cremeTablet,
+      mobile: cremeMobile,
+      thumbnail: cremeThumbnail,
+    },
+    macaron: {
+      desktop: macaronDesktop,
+      tablet: macaronTablet,
+      mobile: macaronMobile,
+      thumbnail: macaronThumbnail,
+    },
+    tiramisu: {
+      desktop: tiramisuDesktop,
+      tablet: tiramisuTablet,
+      mobile: tiramisuMobile,
+      thumbnail: tiramisuThumbnail,
+    },
+    baklava: {
+      desktop: baklavaDesktop,
+      tablet: baklavaTablet,
+      mobile: baklavaMobile,
+      thumbnail: baklavaThumbnail,
+    },
+    pie: {
+      desktop: meringueDesktop,
+      tablet: meringueTablet,
+      mobile: meringueMobile,
+      thumbnail: meringueThumbnail,
+    },
+    cake: {
+      desktop: cakeDesktop,
+      tablet: cakeTablet,
+      mobile: cakeMobile,
+      thumbnail: cakeThumbnail,
+    },
+    brownie: {
+      desktop: brownieDesktop,
+      tablet: brownieTablet,
+      mobile: brownieMobile,
+      thumbnail: brownieThumbnail,
+    },
+    pannaCotta: {
+      desktop: pannaCottaDesktop,
+      tablet: pannaCottaTablet,
+      mobile: pannaCottaMobile,
+      thumbnail: pannaCottaThumbnail,
+    },
+  }
+;
