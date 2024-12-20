@@ -20,4 +20,13 @@
     .product-img{
         @apply rounded-md w-[20.44rem] h-[13.25rem] md:w-[13.33rem] lg:w-[15.67rem] lg:h-[15rem];
     }
+    .cart{
+        @apply bg-[#FCF8F6] font-redHatText p-[1.5rem] lg:py-[4rem] lg:px-[6rem] flex flex-col lg:flex-row gap-4 lg:gap-x-8;
+    }
+    .product-list{
+        @apply grid grid-flow-row grid-cols-1 items-center md:grid-cols-3 gap-y-[1rem] md:gap-y-[1.3rem] lg:gap-y-[1.7rem] gap-x-[1rem] lg:gap-x-8;
+    }
+    .cart-items{
+        @apply h-fit lg:w-[28rem] rounded-md p-6 bg-white flex flex-col items-center justify-center;
+    }
 }

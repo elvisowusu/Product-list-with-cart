@@ -7,7 +7,6 @@ export const ProductsCard = ({ item }) => {
     <div className="product-card">
       <section className="relative h-[14.6rem] lg:h-[16.375rem]  mb-6">
         {/* <img src={item.img} alt="" className="product-img" /> */}
-        {/* Images for responsive breakpoints */}
         <img
           src={images.mobile}
           alt={item.name}
@@ -43,7 +42,7 @@ ProductsCard.propTypes = {
   item: PropTypes.shape({
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    img: PropTypes.string.isRequired,
+    key: PropTypes.string.isRequired,
     price: PropTypes.string.isRequired,
   }).isRequired,
   index: PropTypes.number,

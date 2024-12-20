@@ -1,7 +1,7 @@
 import emptyCartImg from "../../assets/illustration-empty-cart.svg";
 export const CartItems = () => {
   return (
-    <div className="h-fit lg:w-[28rem] rounded-md p-6 bg-white flex flex-col items-center justify-center">
+    <div className="cart-items">
       <h1 className="font-bold text-[1.5rem] text-[#C73B0F] mb-[1rem] w-full">Your Cart(0)</h1>
       {emptyCart()}
     </div>
