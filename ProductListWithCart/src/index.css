@@ -12,7 +12,7 @@
 
 @layer components{
     .add-to-cart{
-        @apply absolute bottom-[0rem] left-1/2 -translate-x-1/2 bg-white rounded-3xl text-sm font-semibold flex gap-3 items-center justify-center border border-[#AD8A85] hover:text-[#C73B0F] p-3 w-40 h-11;
+        @apply absolute bottom-[0rem] left-1/2 -translate-x-1/2 bg-white rounded-3xl text-sm font-semibold flex gap-3 items-center justify-center border border-[#AD8A85] hover:text-[#C73B0F] transition ease-in duration-150 p-3 w-40 h-11;
     }
     .product-card{
         @apply h-fit w-fit;
@@ -24,9 +24,9 @@
         @apply bg-[#FCF8F6] font-redHatText p-[1.5rem] lg:py-[4rem] lg:px-[6rem] flex flex-col lg:flex-row gap-4 lg:gap-x-8;
     }
     .product-list{
-        @apply grid grid-flow-row grid-cols-1 items-center md:grid-cols-3 gap-y-[1rem] md:gap-y-[1.3rem] lg:gap-y-[1.7rem] gap-x-[1rem] lg:gap-x-8;
+        @apply grid grid-flow-row grid-cols-1 items-center sm:grid-cols-2 md:grid-cols-3 gap-y-[1rem] md:gap-y-[1.3rem] lg:gap-y-[1.7rem] gap-x-[1rem] lg:gap-x-8;
     }
     .cart-items{
-        @apply h-fit lg:w-[28rem] rounded-md p-6 bg-white flex flex-col items-center justify-center;
+        @apply h-fit lg:w-[28rem] rounded-xl p-6 bg-white flex flex-col items-center justify-center;
     }
 }
