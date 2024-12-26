@@ -1,4 +1,5 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import { createContext, useContext, useState, useEffect } from "react";
 
 const OrderContext = createContext();
 
@@ -143,6 +144,11 @@ export const OrderProvider = ({ children }) => {
       {children}
     </OrderContext.Provider>
   );
+};
+
+// Prop Validation
+OrderProvider.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export const useOrderProduct = () => useContext(OrderContext);
