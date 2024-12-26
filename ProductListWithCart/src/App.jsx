@@ -1,10 +1,11 @@
 import { Cart } from "./components/cart/Cart";
+import { OrderProvider } from "./hooks/useOrderProduct";
 
 function App() {
   return (
-    <div>
+    <OrderProvider>
       <Cart />
-    </div>
+    </OrderProvider>
   );
 }
 
