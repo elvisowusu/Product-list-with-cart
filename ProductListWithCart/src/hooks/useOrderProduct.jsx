@@ -5,6 +5,7 @@ const OrderContext = createContext();
 
 export const OrderProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
+  const [confirm, setConfirm] = useState(false);
 
   const availableProducts = [
     {
@@ -124,6 +125,10 @@ export const OrderProvider = ({ children }) => {
       .toFixed(2);
   };
 
+  const orderFunc = () => {
+    setConfirm(!confirm);
+  };
+
   useEffect(() => {
     console.log(cart);
   }, [cart]);
@@ -139,6 +144,8 @@ export const OrderProvider = ({ children }) => {
           removeFromCart,
           calculateTotal,
         },
+        confirm,
+        orderFunc,
       }}
     >
       {children}
