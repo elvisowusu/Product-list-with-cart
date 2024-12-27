@@ -8,7 +8,7 @@ export const ConfirmOrder = () => {
 
   return (
     <div className="fixed top-0 left-0 h-[100vh] w-full bg-[#00000080] flex flex-col justify-center items-center">
-      <div className="absolute bottom-0 sm:relative bg-white rounded-t-xl sm:rounded-xl p-[1rem]  w-full sm:w-max">
+      <div className="absolute bottom-0 sm:relative bg-white rounded-t-xl sm:rounded-xl p-[1rem]  w-full sm:w-[55%] md:w-max">
         <section>
           <img src={orderConfirmed} className="w-[2rem] mb-3" alt="Order Confirmed" />
           <div>
